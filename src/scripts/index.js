@@ -10,5 +10,8 @@ try {
         console.log(result)
     }, function(err) {
         console.log(err)
+    })['catch'](function(err) {
+        console.log('ERROR!');
+        console.log(err);
     })
 }
