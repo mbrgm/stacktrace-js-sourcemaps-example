@@ -5,6 +5,7 @@ var BUILD_DIR = path.join(__dirname, 'build')
 var config =
     { context: path.join(__dirname, 'src')
     , devServer: { contentBase: BUILD_DIR }
+    , devtool: '#source-map'
     , entry: './scripts/index.js'
     , module:
         { loaders:
